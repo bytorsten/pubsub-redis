@@ -39,6 +39,14 @@ class PubSub implements PubSubInterface
     /**
      * @param string $address
      */
+    public function __construct(string $address = null)
+    {
+        $this->address = $address;
+    }
+
+    /**
+     * @param string $address
+     */
     public function setAddress(string $address): void
     {
         $this->address = $address;

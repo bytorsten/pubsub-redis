@@ -25,10 +25,11 @@ class Publisher
     protected $serializer;
 
     /**
-     *
+     * @param string $address
      */
-    public function __construct()
+    public function __construct(string $address = null)
     {
+        $this->address = $address;
         $factory = new RedisProtocolFactory();
         $this->serializer = $factory->createSerializer();
         register_shutdown_function([$this, 'shutdownClient']);
