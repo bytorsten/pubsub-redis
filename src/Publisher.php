@@ -81,7 +81,8 @@ class Publisher
     /**
      *
      */
-    public function shutdownClient() {
+    public function shutdownClient()
+    {
         if ($this->client) {
             $this->client->close();
             $this->client = null;
