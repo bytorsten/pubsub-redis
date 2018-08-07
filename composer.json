@@ -1,0 +1,22 @@
+{
+    "description": "pubsub redis implementation",
+    "type": "library",
+    "name": "bytorsten/pubsub-redis",
+    "authors": [
+        {
+            "name": "Torsten Blindert",
+            "email": "info@by-torsten.com"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+      "bytorsten/graphql-subscriptions": "*",
+	       "clue/redis-react": "^2.2.0",
+        "clue/socket-raw": "^1.3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "byTorsten\\PubSub\\Redis\\": "src/"
+        }
+    }
+}
